@@ -1,0 +1,129 @@
+/* src/styles/theme.css */
+@import "tailwindcss";
+
+@theme {
+  /* Colores base - modo claro (esquema vibrante púrpura/fucsia) */
+  --color-primary: 168 85 247;
+  --color-primary-hover: 147 51 234;
+  --color-secondary: 236 72 153;
+  --color-accent: 16 185 129;
+  
+  --color-text: 17 24 39;
+  --color-text-muted: 107 114 128;
+  
+  --color-bg: 250 250 250;
+  --color-bg-elevated: 255 255 255;
+  --color-bg-muted: 243 244 246;
+  
+  --color-border: 229 231 235;
+  
+  --color-success: 34 197 94;
+  --color-warning: 234 179 8;
+  --color-error: 239 68 68;
+  --color-info: 168 85 247;
+
+  /* Colores base - modo oscuro */
+  --color-primary-dark: 192 132 252;
+  --color-primary-hover-dark: 168 85 247;
+  --color-secondary-dark: 244 114 182;
+  --color-accent-dark: 110 231 183;
+  
+  --color-text-dark: 243 244 246;
+  --color-text-muted-dark: 156 163 175;
+  
+  --color-bg-dark: 17 24 39;
+  --color-bg-elevated-dark: 31 41 55;
+  --color-bg-muted-dark: 55 65 81;
+  
+  --color-border-dark: 55 65 81;
+  
+  --color-success-dark: 74 222 128;
+  --color-warning-dark: 250 204 21;
+  --color-error-dark: 248 113 113;
+  --color-info-dark: 192 132 252;
+}
+
+:root {
+  color-scheme: light;
+  --color-primary: rgb(168 85 247);
+  --color-primary-hover: rgb(147 51 234);
+  --color-secondary: rgb(236 72 153);
+  --color-accent: rgb(16 185 129);
+  
+  --color-text: rgb(17 24 39);
+  --color-text-muted: rgb(107 114 128);
+  
+  --color-bg: rgb(250 250 250);
+  --color-bg-elevated: rgb(255 255 255);
+  --color-bg-muted: rgb(243 244 246);
+  
+  --color-border: rgb(229 231 235);
+  
+  --color-success: rgb(34 197 94);
+  --color-warning: rgb(234 179 8);
+  --color-error: rgb(239 68 68);
+  --color-info: rgb(168 85 247);
+}
+
+[data-theme="dark"] {
+  color-scheme: dark;
+  --color-primary: rgb(192 132 252);
+  --color-primary-hover: rgb(168 85 247);
+  --color-secondary: rgb(244 114 182);
+  --color-accent: rgb(110 231 183);
+  
+  --color-text: rgb(243 244 246);
+  --color-text-muted: rgb(156 163 175);
+  
+  --color-bg: rgb(17 24 39);
+  --color-bg-elevated: rgb(31 41 55);
+  --color-bg-muted: rgb(55 65 81);
+  
+  --color-border: rgb(55 65 81);
+  
+  --color-success: rgb(74 222 128);
+  --color-warning: rgb(250 204 21);
+  --color-error: rgb(248 113 113);
+  --color-info: rgb(192 132 252);
+}
+
+/* Utilidades personalizadas */
+.bg-primary {
+  background-color: var(--color-primary);
+}
+
+.hover\:bg-primary-hover:hover {
+  background-color: var(--color-primary-hover);
+}
+
+.text-primary {
+  color: var(--color-primary);
+}
+
+.bg-base {
+  background-color: var(--color-bg);
+}
+
+.bg-elevated {
+  background-color: var(--color-bg-elevated);
+}
+
+.bg-muted {
+  background-color: var(--color-bg-muted);
+}
+
+.text-base {
+  color: var(--color-text);
+}
+
+.text-muted {
+  color: var(--color-text-muted);
+}
+
+.border-base {
+  border-color: var(--color-border);
+}
+
+.gradient-primary {
+  background: linear-gradient(135deg, var(--color-primary) 0%, var(--color-secondary) 100%);
+}
